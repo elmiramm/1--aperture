@@ -293,12 +293,12 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: "Arial", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.14;
-  color: #000;
-  background-color: #FFF8F3;
+  line-height: 1.42;
+  color: #fff;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -322,12 +322,6 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-img {
-  object-fit: cover;
-  max-width: 100%;
-  display: block;
 }
 
 button {
@@ -356,7 +350,7 @@ select {
 }
 
 .container {
-  max-width: 1190px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -374,20 +368,32 @@ select {
   overflow: hidden;
 }
 
-.btn {
+.button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
+  padding: 9px 20px;
   text-align: center;
   transition: all 0.3s ease;
-  min-height: 40px;
-  min-width: 160px;
-  line-height: 1.75;
-  font-weight: 600;
-  color: #FFFFF0;
-  background-color: #FFBD59;
-  border-radius: 21px;
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  border-radius: 14px;
+}
+.button:hover {
+  background-color: #132c2f;
+  color: #fff;
+}
+.button:focus {
+  background-color: #132c2f;
+  color: #fff;
+}
+.button:active {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .title {
@@ -395,4 +401,38 @@ select {
   line-height: 1.42;
   font-weight: 700;
   text-align: center;
+}
+
+.page-header__inner {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.page-header__main-nav {
+  flex: 1 1 auto;
+  margin: 0 31px;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav__item {
+  margin-left: 32px;
+}
+.main-nav__item:first-child {
+  margin-left: 0;
+}
+.main-nav__link:hover {
+  color: #132c2f;
+}
+.main-nav__link:focus {
+  outline: none;
+  text-decoration: underline;
+  color: #132c2f;
+}
+.main-nav__link:active {
+  color: #46514d;
+  border: 1px solid #fff;
 }

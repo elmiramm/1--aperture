@@ -18,12 +18,10 @@ body {
 	height: 100%; // ------Фиксация-футера-внизу-страницы---------
 
 
-	// font-family: 'Comfortaa', cursive;
-	// font-family: 'Yeseva One', cursive;
 	font-family: $fontFamily, Arial, Helvetica, sans-serif; 
 	font-size: $fontSize;
 	font-weight: 400;
-	line-height: 1.14;
+	line-height: 1.42;
 	color: $mainTextColor;
 	background-color: $bg;
 
@@ -53,11 +51,11 @@ ul, li {
 	list-style: none;
 }
 
-img {
-	object-fit: cover;
-	max-width: 100%;
-	display: block;
-}
+// img {
+// 	object-fit: cover;
+// 	max-width: 100%;
+// 	display: block;
+// }
 
 button {
 	padding: 0;
@@ -106,21 +104,7 @@ select {
 }
 
 // -----Общие блоки-----
-.btn {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	padding: 6px 12px;
-	text-align: center;
-	transition: all 0.3s ease;
-	min-height: 40px;
-	min-width: 160px;
-	line-height: 1.75;
-	font-weight: 600;
-	color: #FFFFF0;
-	background-color: $accentColor;
-	border-radius: 21px;
-}
+@import "buttons";
 
 .title {
 	// font-family: 'Montserrat';
@@ -130,7 +114,8 @@ select {
 	text-align: center;
 }
 
-@import "header";
+@import "page-header";
+@import "main-nav";
 @import "footer";
 
 // -----Общие блоки-End -----

@@ -1,0 +1,13 @@
+.page-header {
+	&__inner {
+		padding: 32px;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__main-nav {
+		flex: 1 1 auto;
+		margin: 0 31px;
+	}
+}

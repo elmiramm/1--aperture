@@ -1,0 +1,26 @@
+.main-nav {
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item {
+		margin-left: 32px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__link {
+		&:hover {
+			color: $accentColor;
+		}
+		&:focus {
+			outline: none;
+			text-decoration: underline;
+			color: $accentColor;
+		}
+		&:active {
+			color: #46514d;
+			border: 1px solid $mainTextColor;
+		}
+	}
+}
