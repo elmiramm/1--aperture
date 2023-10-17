@@ -1,0 +1,46 @@
+.work {
+	position: relative;
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+
+		width: 100%;
+		object-fit: cover;
+	}
+	&__content {
+		min-height: 600px;
+		height: 100%;
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	&__text {
+		max-width: 300px;
+	}
+	&__settings {
+		margin-top: 200px;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 1.43; 
+		letter-spacing: 0.1em;
+	}
+	&__descr {
+		color: $textColor;
+	}
+	@media (max-width: $burgerBP) {
+		&__content {
+			min-height: 400px;
+		}
+		&__settings {
+			margin-top: 50px;
+		}
+	}
+}
