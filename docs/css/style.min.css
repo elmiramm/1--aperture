@@ -761,10 +761,10 @@ select {
 }
 .whatwedo__item-link {
   max-width: 143px;
+  min-width: auto;
   padding: 5px 10px 5px 4px;
   position: relative;
   display: flex;
-  justify-content: space-between;
   font-size: 15px;
   line-height: 1.33;
   letter-spacing: 0.05em;
@@ -772,8 +772,8 @@ select {
 }
 .whatwedo__item-link::before {
   content: "";
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   background-image: url("../img/icons/decor-circle.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -820,7 +820,8 @@ select {
   max-width: 300px;
 }
 .work__settings {
-  margin-top: 200px;
+  margin-top: 180px;
+  margin-bottom: 35px;
 }
 .work__title {
   text-transform: uppercase;
@@ -837,5 +838,87 @@ select {
   }
   .work__settings {
     margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .work__image {
+    height: 100%;
+  }
+}
+
+.tools {
+  position: relative;
+}
+.tools__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  object-fit: cover;
+}
+.tools__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.tools__content {
+  min-height: 540px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+.tools__subtitle {
+  color: #C0C0C0;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.tools__title {
+  font-size: 28px;
+  line-height: 1.14;
+  margin-bottom: 14px;
+}
+.tools__text {
+  margin-bottom: 29px;
+}
+.tools__link {
+  max-width: 143px;
+  min-width: auto;
+  padding: 5px 10px 5px 4px;
+  position: relative;
+  display: flex;
+  font-size: 15px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  border-radius: 14px;
+}
+.tools__link::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icons/decor-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 6px;
+}
+@media (max-width: 767.98px) {
+  .tools__image {
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .tools__container {
+    flex-direction: column;
+  }
+  .tools__content {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .tools__settings {
+    margin-bottom: 10px;
   }
 }

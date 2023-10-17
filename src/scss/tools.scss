@@ -1,0 +1,84 @@
+.tools {
+	position: relative;
+	&__image {
+		position: absolute;
+		right: 0;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		object-fit: cover;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__content {
+		min-height: 540px;
+		max-width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 60px;
+	}
+	&__subtitle {
+		color: $textColor;
+		text-transform: uppercase;
+
+		margin-bottom: 6px;
+	}
+	&__title {
+		font-size: 28px;
+		line-height: 1.14;
+
+		margin-bottom: 14px;
+	}
+	&__text {
+		margin-bottom: 29px;
+	}
+	&__link {
+		max-width: 143px;
+		min-width: auto;
+		padding: 5px 10px 5px 4px;
+		position: relative;
+
+		display: flex;
+
+		font-size: 15px;
+		line-height: 1.33;
+		letter-spacing: 0.05em;
+
+		border-radius: 14px;
+		&::before {
+			content: "";
+			width: 32px;
+			height: 32px;
+			background-image: url("../img/icons/decor-circle.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+
+			margin-right: 6px;
+			
+		}
+	}
+	@media (max-width: $burgerBP) {
+		&__image {
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&__container {
+			flex-direction: column;
+		}
+		&__content {
+			position: relative;
+			z-index: 2;
+			max-width: 100%;
+			padding: 15px;
+		}
+		&__settings {
+			margin-bottom: 10px;
+		}
+	}
+}
