@@ -6,4 +6,7 @@
 	color: $textColor;
 
 	margin-bottom: 42px;
+	@media (max-width: $burgerBP) {
+		font-size: 16px;
+	}
 }

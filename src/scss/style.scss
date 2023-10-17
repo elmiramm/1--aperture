@@ -58,6 +58,7 @@ img {
 
 button {
 	padding: 0;
+	font-family: inherit;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
@@ -122,6 +123,6 @@ select {
 @import "whatwedo";
 @import "works";
 @import "tools";
-
+@import "clients";
 
 @import "footer";

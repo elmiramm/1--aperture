@@ -1,0 +1,39 @@
+.clients {
+	&__container {
+		padding: 100px 45px 120px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__link {
+		&:hover,
+		&:focus {
+			.clients__svg-path {
+				fill: $accentColorLight;
+				transition: all 0.3s ease;
+			}
+		}
+		&:active {
+			.clients__svg-path {
+				fill: $accentColor;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+	@media (max-width: 850px) {
+		&__container {
+			padding: 80px 15px 80px
+		}
+	}
+	@media (max-width: $burgerBP) {
+		&__list {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__item {
+			margin: 0px 5px 30px;
+		}
+	}
+}

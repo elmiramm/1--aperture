@@ -331,6 +331,7 @@ img {
 
 button {
   padding: 0;
+  font-family: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -422,6 +423,12 @@ select {
   text-align: center;
   margin-bottom: 15px;
 }
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+}
 
 .text {
   font-size: 23px;
@@ -430,6 +437,11 @@ select {
   text-align: center;
   color: #C0C0C0;
   margin-bottom: 42px;
+}
+@media (max-width: 767.98px) {
+  .text {
+    font-size: 16px;
+  }
 }
 
 .page-header {
@@ -920,5 +932,36 @@ select {
   }
   .tools__settings {
     margin-bottom: 10px;
+  }
+}
+
+.clients__container {
+  padding: 100px 45px 120px;
+}
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients__link:hover .clients__svg-path, .clients__link:focus .clients__svg-path {
+  fill: #9FD5C7;
+  transition: all 0.3s ease;
+}
+.clients__link:active .clients__svg-path {
+  fill: #132c2f;
+  transition: all 0.3s ease;
+}
+@media (max-width: 850px) {
+  .clients__container {
+    padding: 80px 15px 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .clients__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients__item {
+    margin: 0px 5px 30px;
   }
 }
