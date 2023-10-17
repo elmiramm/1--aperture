@@ -22,6 +22,9 @@
 	}
 	&__text {
 		max-width: 300px;
+		&--starfall {
+			max-width: 249px;
+		}
 	}
 	&__settings {
 		margin-top: 180px;

@@ -831,6 +831,9 @@ select {
 .work__text {
   max-width: 300px;
 }
+.work__text--starfall {
+  max-width: 249px;
+}
 .work__settings {
   margin-top: 180px;
   margin-bottom: 35px;
