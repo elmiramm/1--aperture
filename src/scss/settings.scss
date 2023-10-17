@@ -1,0 +1,67 @@
+.settings {
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 5px;
+	&__item {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+		&--location {
+			margin-left: 31px;
+			&::before {
+				width: 10px;
+				height: 16px;
+				top: 6px;
+				left: -15px;
+				background-image: url(../img/icons/settings/location.svg);
+			}
+		}
+		&--iso {
+			margin-left: 55px;
+			&::before {
+				width: 32px;
+				height: 16px;
+				top: 6px;
+				left: -37px;
+				background-image: url(../img/icons/settings/iso.svg);
+			}
+		}
+		&--f-stop {
+			margin-left: 38px;
+			&::before {
+				width: 16px;
+				height: 16px;
+				top: 6px;
+				left: -21px;
+				background-image: url(../img/icons/settings/f-stop.svg);
+			}
+		}
+		&--exposure {
+			margin-left: 22px;
+			&::before {
+				width: 16px;
+				height: 16px;
+				top: 6px;
+				left: -21px;
+				background-image: url(../img/icons/settings/exposure.svg);
+			}
+		}
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 1;
+	}
+	@media (max-width: $burgerBP) {
+		flex-wrap: wrap;
+		&__item {
+			margin-top: 10px;
+		}
+	}
+}

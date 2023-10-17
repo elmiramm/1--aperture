@@ -87,6 +87,14 @@ select {
 	max-width: $maxWidthContainer;
 	padding: 0 15px;
 	margin: 0 auto;
+	&--fluid {
+		max-width: 1440px;
+		padding: 0 46px;
+		margin: 0 auto;
+		@media (max-width: $burgerBP) {
+			padding: 0 15px;
+		}
+	}
 }
 
 .visually-hidden {
@@ -116,6 +124,8 @@ select {
 @import "page-header";
 @import "main-nav";
 @import "burger";
+@import "hero";
+@import "settings";
 @import "footer";
 
 // -----Общие блоки-End -----
