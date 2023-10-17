@@ -110,26 +110,16 @@ select {
 	overflow: hidden;
 }
 
-// -----Общие блоки-----
 @import "buttons";
-
-.title {
-	// font-family: 'Montserrat';
-	font-size: 36px;
-	line-height: 1.42;
-	font-weight: 700;
-	text-align: center;
-}
+@import "title";
+@import "text";
 
 @import "page-header";
 @import "main-nav";
 @import "burger";
 @import "hero";
 @import "settings";
+@import "whatwedo";
+
+
 @import "footer";
-
-// -----Общие блоки-End -----
-
-
-// Adaptive 
-// @import "_media"; 
