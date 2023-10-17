@@ -1,0 +1,40 @@
+.help {
+	&__container {
+		padding: 100px 45px 100px;
+	}
+	&__text {
+		margin-bottom: 12px;
+	}
+	&__link {
+		max-width: 154px;
+		min-width: auto;
+		padding: 5px 10px 5px 4px;
+		position: relative;
+
+		display: flex;
+
+		font-size: 15px;
+		line-height: 1.33;
+		letter-spacing: 0.05em;
+
+		border-radius: 14px;
+		margin: 0 auto;
+		&::before {
+			content: "";
+			width: 32px;
+			height: 32px;
+			background-image: url("../img/icons/decor-circle.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+
+			margin-right: 6px;
+			
+		}
+	}
+	@media (max-width: 850px) {
+		&__container {
+			padding: 80px 15px 80px
+		}
+	}
+}

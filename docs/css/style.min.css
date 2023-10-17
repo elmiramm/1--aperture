@@ -968,3 +968,37 @@ select {
     margin: 0px 5px 30px;
   }
 }
+
+.help__container {
+  padding: 100px 45px 100px;
+}
+.help__text {
+  margin-bottom: 12px;
+}
+.help__link {
+  max-width: 154px;
+  min-width: auto;
+  padding: 5px 10px 5px 4px;
+  position: relative;
+  display: flex;
+  font-size: 15px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  border-radius: 14px;
+  margin: 0 auto;
+}
+.help__link::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icons/decor-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 6px;
+}
+@media (max-width: 850px) {
+  .help__container {
+    padding: 80px 15px 80px;
+  }
+}
