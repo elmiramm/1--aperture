@@ -1,26 +1,35 @@
 .main-nav {
 	&__list {
 		display: flex;
-		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
 	&__item {
-		margin-left: 32px;
-		&:first-child {
-			margin-left: 0;
-		}
+		margin-right: 32px;
 	}
 	&__link {
+		transition: all 0.3s ease;
 		&:hover {
-			color: $accentColor;
+			color: $accentColorLight;
 		}
 		&:focus {
-			outline: none;
-			text-decoration: underline;
-			color: $accentColor;
+			color: $accentColorLight;
 		}
 		&:active {
-			color: #46514d;
-			border: 1px solid $mainTextColor;
+			color: $accentColor;
+		}
+	}
+	@media (max-width: 860px) {
+		&__item {
+			margin-right: 20px;
+		}
+	}
+	@media (max-width: $bp768) {
+		&__list {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item {
+			margin: 0 0 10px;
 		}
 	}
 }

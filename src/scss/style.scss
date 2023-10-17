@@ -51,11 +51,10 @@ ul, li {
 	list-style: none;
 }
 
-// img {
-// 	object-fit: cover;
-// 	max-width: 100%;
-// 	display: block;
-// }
+img {
+	max-width: 100%;
+	display: block;
+}
 
 button {
 	padding: 0;
@@ -116,6 +115,7 @@ select {
 
 @import "page-header";
 @import "main-nav";
+@import "burger";
 @import "footer";
 
 // -----Общие блоки-End -----

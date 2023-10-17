@@ -1,4 +1,6 @@
 .button {
+	min-width: 155px;
+
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -12,11 +14,14 @@
 	color: $bg;
 	background-color: $mainTextColor;
 	border-radius: 14px;
+	border: 1px solid $mainTextColor;
 	&:hover {
+		border: 1px solid $mainTextColor;
 		background-color: $accentColor;
 		color: $mainTextColor;
 	}
 	&:focus {
+		border: 1px solid $accentColor;
 		background-color: $accentColor;
 		color: $mainTextColor;
 	}
