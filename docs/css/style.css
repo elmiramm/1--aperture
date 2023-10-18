@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /**
  * Swiper 10.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
