@@ -60,6 +60,7 @@
 		line-height: 1.42;
 	}
 	@media (max-width: $burgerBP) {
+		padding: 40px 0;
 		&--flex {
 			flex-direction: column;
 		}
