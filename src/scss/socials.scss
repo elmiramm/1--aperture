@@ -1,0 +1,22 @@
+.socials {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	&__item {
+		margin-left: 20px;
+	}
+	&__link:hover, 
+	&__link:active {
+		svg path {
+			fill: $accentColorLight;
+			transition: all 0.3s easy;
+		}
+	}
+	&__link:focus {
+		svg path {
+			fill: $accentColor;
+			transition: all 0.3s easy;
+		}
+	}
+		
+}

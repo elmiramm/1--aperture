@@ -1002,3 +1002,142 @@ select {
     padding: 80px 15px 80px;
   }
 }
+
+.page-footer {
+  padding: 100px 0;
+}
+.page-footer--flex {
+  display: flex;
+}
+.page-footer__left {
+  flex: 1 1 auto;
+}
+.page-footer__right {
+  width: 458px;
+}
+.page-footer__top {
+  padding-bottom: 36px;
+  position: relative;
+}
+.page-footer__top::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+.page-footer__text {
+  font-size: 13px;
+  line-height: 1.53;
+  color: #C0C0C0;
+  margin-top: 20px;
+}
+.page-footer__nav {
+  min-width: 200px;
+}
+.page-footer__title {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0C0C0;
+  margin-bottom: 10px;
+}
+.page-footer__item {
+  margin-bottom: 10px;
+}
+.page-footer__link:hover, .page-footer__link:focus {
+  color: #9FD5C7;
+}
+.page-footer__link:active {
+  color: #132c2f;
+}
+.page-footer__bottom {
+  padding-top: 56px;
+}
+.page-footer__copyright {
+  color: #C0C0C0;
+  font-size: 14px;
+  line-height: 1.42;
+}
+@media (max-width: 767.98px) {
+  .page-footer--flex {
+    flex-direction: column;
+  }
+  .page-footer__left {
+    margin-bottom: 30px;
+  }
+  .page-footer__right {
+    width: 100%;
+  }
+  .page-footer__navs {
+    align-items: center;
+  }
+  .page-footer__navs .page-footer__title,
+  .page-footer__navs .page-footer__item {
+    text-align: center;
+  }
+  .page-footer__nav:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.subscribe {
+  padding: 40px 0;
+  position: relative;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+.subscribe__form {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 11px;
+}
+.subscribe__input-block {
+  flex: 1 1 auto;
+}
+.subscribe__button {
+  padding: 5px;
+  background-color: #000;
+  border-radius: 11px;
+  color: #fff;
+  margin-left: 5px;
+}
+.subscribe__button:hover, .subscribe__button:focus {
+  color: #9FD5C7;
+}
+.subscribe__button:active {
+  background-color: #C0C0C0;
+  color: #132c2f;
+}
+.subscribe__input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.socials__item {
+  margin-left: 20px;
+}
+.socials__link:hover svg path, .socials__link:active svg path {
+  fill: #9FD5C7;
+  transition: all 0.3s easy;
+}
+.socials__link:focus svg path {
+  fill: #132c2f;
+  transition: all 0.3s easy;
+}
